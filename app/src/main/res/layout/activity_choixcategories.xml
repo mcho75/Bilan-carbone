@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/choix_categories"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/nom_association"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titre2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bilan actuel :\nO kg"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_margin="50dp"
+        app:layout_constraintTop_toBottomOf="@id/grille_boutons_categories"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <GridLayout
+        android:id="@+id/grille_boutons_categories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/nom_association"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" >
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/grille_resultats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:gravity="center"
+        android:rowCount="3"
+        android:columnCount="3"
+        app:layout_constraintTop_toBottomOf="@+id/titre2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" >
+
+        <ImageView
+            android:id="@+id/barre_alimentation"
+            android:src="@drawable/bg_bouton_orange"
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_row="0"
+            android:layout_column="0" />
+
+        <ImageView
+            android:src="@drawable/salad_sombre"
+            android:layout_width="80dp"
+            android:layout_row="1"
+            android:layout_column="0" />
+
+        <TextView
+            android:id="@+id/texte_alimentation"
+            android:layout_width="80dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/barre_biens"
+            android:src="@drawable/bg_bouton_orange"
+            android:layout_width="60dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_row="0"
+            android:layout_column="1" />
+
+        <ImageView
+            android:src="@drawable/shirt_long_sleeve_sombre"
+            android:layout_width="80dp"
+            android:layout_row="1"
+            android:layout_column="1" />
+
+        <TextView
+            android:id="@+id/texte_biens"
+            android:layout_width="80dp"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/barre_transport"
+            android:src="@drawable/bg_bouton_orange"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_row="0"
+            android:layout_column="2" />
+
+        <ImageView
+            android:src="@drawable/subway_sombre"
+            android:layout_width="80dp"
+            android:layout_row="1"
+            android:layout_column="2" />
+
+        <TextView
+            android:id="@+id/texte_transport"
+            android:layout_width="80dp"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:gravity="center" />
+
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,7 +3,24 @@
     <style name="Base.Theme.ProjetIntroductionDepInfo" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:background">@color/bg</item>
+        <item name="android:textColor">@color/fg</item>
+        <item name="colorPrimary">@color/bg_bouton_4</item>
+        <item name="colorPrimaryVariant">@color/bg_bouton_3</item>
+        <item name="android:navigationBarColor">?android:background</item>
+        <item name="android:statusBarColor">?android:background</item>
+        <item name="android:textSize">14sp</item>
     </style>
 
     <style name="Theme.ProjetIntroductionDepInfo" parent="Base.Theme.ProjetIntroductionDepInfo" />
+
+    <style name="Theme.ProjetIntroductionDepInfo.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.ProjetIntroductionDepInfo.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.ProjetIntroductionDepInfo.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

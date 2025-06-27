@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="texte_bouton">#F4E2DE</color>
+    <color name="bg_bouton_1">#025259</color>
+    <color name="bg_bouton_2">#007172</color>
+    <color name="bg_bouton_3">#D94F04</color>
+    <color name="bg_bouton_4">#F29325</color>
+    <color name="bg">#F4E2DE</color>
+    <color name="bg2">#EFD4B6</color>
+    <color name="fg">#011D1F</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- La palette de couleurs utilisée -->
+    <color name="palette1a">#8C8303</color>
+    <color name="palette2a">#736B02</color>
+    <color name="palette3a">#403501</color>
+    <color name="palette4a">#D9B79A</color>
+    <color name="palette5a">#A64C38</color>
+    <color name="palette6a">#EDDACB</color>
+    <color name="palette7a">#973925</color>
+
+    <!-- La palette de couleurs utilisée -->
+    <color name="palette1b">#025259</color>
+    <color name="palette2b">#007172</color>
+    <color name="palette3b">#F29325</color>
+    <color name="palette4b">#D94F04</color>
+    <color name="palette5b">#F4E2DE</color>
+    <color name="palette6b">#011D1F</color>
+    <color name="palette7b">#EFD4B6</color>
 </resources>

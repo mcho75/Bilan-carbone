@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/bg_bouton_3"/>
+            <corners android:radius="10dp"/>
+        </shape>
+    </item>
+    <item android:state_pressed="false">
+        <shape android:shape="rectangle">
+            <gradient android:startColor="@color/bg_bouton_3" android:endColor="@color/bg_bouton_4" android:angle="90"/>
+            <corners android:radius="10dp"/>
+        </shape>
+    </item>
+</selector>
