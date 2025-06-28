@@ -6,18 +6,25 @@
     <LinearLayout
         android:id="@+id/layout_alimentation"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:orientation="vertical" >
 
-        <TextView
-            android:id="@+id/titre_goodies"
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_alimentation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Alimentation"
-            android:layout_marginTop="50dp"
-            android:textSize="24sp" />
+            android:contextClickable="true"
+            android:theme="?attr/actionBarTheme">
+
+            <TextView
+                android:id="@+id/titre_goodies"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/alimentation"
+                android:textSize="24sp" />
+        </androidx.appcompat.widget.Toolbar>
 
         <LinearLayout
             android:id="@+id/grille_alimentation"

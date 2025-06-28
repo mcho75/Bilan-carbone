@@ -8,6 +8,7 @@ import android.widget.GridLayout;
 import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import com.example.projetintroductiondepinfo.Database.AppDatabase;
 import com.example.projetintroductiondepinfo.Database.Emission;
@@ -29,6 +30,14 @@ public class AlimentationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alimentation);
+
+        // mise en place de la barre d'application
+        Toolbar toolbarAlimentation = findViewById(R.id.toolbar_alimentation);
+        setSupportActionBar(toolbarAlimentation);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        toolbarAlimentation.setNavigationOnClickListener(
+                v -> finish()
+        );
 
         // acquisition
         LinearLayout grille = findViewById(R.id.layout_alimentation);
